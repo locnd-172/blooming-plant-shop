@@ -1,0 +1,231 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*, html {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    font-size: 12px;
+}
+
+footer {
+    height: 70px;
+    background-color: #284B37;
+}
+
+.container {
+    position: relative;
+}
+
+/* PRODUCT  */
+.section-title {
+    text-align: center;
+    position: relative;
+    margin: 60px 0 20px 0;
+    font-size: 2rem;
+}
+
+.product {
+    width: 80%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 1rem;
+    margin: 0 auto 50px;
+    position: relative;
+    padding: 0;
+}
+
+.product-card {
+    width: 250px;
+    position: relative;
+    /* box-shadow: 0 2px 7px #ececec; */
+    margin: 20px 10px;
+    background: transparent;
+}
+
+.product-card:nth-last-child(-n+2) {
+    justify-self: flex-start;
+    align-self: flex-start;
+    /* display: n; */
+}
+
+.product-thumbnail {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 250px;
+    padding: 0;
+    background: #f0f0f0;
+    backface-visibility: hidden;
+    overflow: hidden;
+    display: block;
+}
+
+.product-thumbnail img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: cover;
+    transition: all 0.2s ease-out;
+}
+
+.product-thumbnail:hover img {
+    transform: scale(1.05, 1.05);
+}
+
+.product a {
+    text-decoration: none;
+}
+
+.product-id {
+    display: none;
+}
+
+.product-info {
+    padding: 10px;
+}
+
+.product-info .product-name {
+    font-size: 18px;
+    font-weight: 500;
+    color: #22643f;
+}
+
+.product-category {
+    display: flex;
+    font-size: 12px;
+    color: #284228;
+    position: absolute;
+    top: 10px;
+    right: 0;
+    background-color: #fff;
+    width: 25%;
+    height: 20px;
+    align-items: center;
+    justify-content: center;
+}
+
+.product-info p {
+    font-size: 12px;
+    color: #9fa1a1;
+}
+
+.product-bottom-info {
+    overflow: hidden;
+    border-top: 1px solid #eee;
+    padding-top: 5px;
+}
+
+.product-bottom-info div {
+    float: left;
+    width: 50%;
+}
+
+.product-price {
+    font-size: 14px;
+    color: #069553;
+    font-weight: 600;
+}
+
+.product-links {
+    text-align: right;
+}
+
+.product-links a {
+    display: inline-block;
+    margin-left: 5px;
+    color: #9fa1a1;
+    font-size: 14px;
+}
+
+.product-links a:hover {
+    color: #284228;
+}
+
+/* REGISTER FORM  */
+.form-register {
+    width: 40%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 1rem;
+    margin: 100px auto;
+    position: relative;
+    padding: 50px;
+    background-color: #fafafa;
+    font-size: 15px;
+}
+
+.form-register .text-field {
+    margin: 10px;
+    padding: 10px 0;
+}
+
+.form-register .text-field input {
+    width: 250px;
+    height: 40px;
+}
+
+.submit-btn {
+    font-size: 1.05rem;
+    color: #ffffff;
+    background-color: #4a755d;
+    cursor: pointer;
+    padding: 10px;
+    width: 100%;
+}
+
+.submit-btn:hover {
+    background-color: #31503f;
+}
+
+/* 
+.plantimg {
+    width: 200px;
+    height: 200px;
+} */
+
+.order {
+    border: 1px solid #cccccc;
+    width: 100%;
+    margin: 1%;
+}
+
+.order tr:first-child {
+    width: 100%;
+    background-color: #e1eee7;
+    color: #006666;
+}
+
+.order td {
+    color: black;
+    width: 15%;
+}
+
+
+.shopping {
+    width: 70%;
+}
+
+footer {
+    padding: 30px;
+    font-size: 1rem;
+}
+
+#copyright {
+    color: #cad3c6;
+}
+
+
+/* header li:last-child { width:30%; float:right;}
+#logo { width: 100px; height: 100px; }
+.form table{width:50%;}
+.product {width: 20%; height: auto; float:left; margin: 5%;}
+.order { border: 1px solid #cccccc; width:100%; margin: 1%;}
+.order tr:first-child{ width:100%; background-color:#e1eee7 ; color: #006666;}
+.order td{ color:black; width: 15%;}
+.plantimg { width:100px; height: 100px;}
+.shopping { width:70%;} */

@@ -1,0 +1,184 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Playfair+Display&display=swap');
+
+* {
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #284B37;
+}
+
+.wrapper {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 60%;
+    height: 70%;
+    border-radius: 3px;
+    box-shadow: 0px 14px 32px 0px rgba(0, 0, 0, 0.15);
+}
+
+.product-img {
+    float: left;
+    width: 60%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.product-img img {
+    border-radius: 3px 0 0 3px;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: 100% 80%;
+}
+
+.product-info {
+    float: left;
+    width: 40%;
+    height: 100%;
+    border-radius: 0 3px 3px 0;
+    background-color: #fcfdfd;
+    padding: 50px;
+    position: relative;
+}
+
+.product-text {
+    height: fit-content;
+    width: 100%;
+}
+
+.product-text h1 {
+    font-size: 48px;
+    color: #284B37;
+    font-style: italic;
+}
+
+.product-text h1,
+.product-price-btn p {
+    font-family: 'DM Serif Display', serif;
+}
+
+.product-text h2 {
+    margin-top: -15px;
+    font-size: 13px;
+    font-weight: 300;
+    color: #8f8f8f;
+    letter-spacing: 0.2em;
+}
+
+.product-text p {
+    font-family: 'Playfair Display', serif;
+    color: #8d8d8d;
+    line-height: 1.7em;
+    font-size: 15px;
+    font-weight: lighter;
+    overflow: hidden;
+    text-align: justify;
+}
+
+.product-price-btn p {
+    font-size: 28px;
+    font-weight: 300;
+    color: #7c7a7a;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.product-price-btn #status {
+    background-color: #cdddd4;
+    font-size: 12px;
+    font-weight: 400;
+    color: #3a5f4a;
+    padding: 4px 8px;
+    border-radius: 50px;
+}
+
+.product-price-btn button {
+    height: 50px;
+    width: 176px;
+    border: none;
+    border-radius: 3px;
+    font-size: 14px;
+    font-weight: 500;
+    letter-spacing: 0.2em;
+    color: #cad3c6;
+    background-color: #284B37;
+    cursor: pointer;
+    outline: none;
+}
+
+.product-price-btn button:hover {
+    background-color: #1f3d2c;
+}
+
+.all-order {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    margin: 0 50px 50px 0;
+}
+
+.all-order a {
+    border: 1px solid #4a705a;
+    border-radius: 50%;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 5px;
+    height: 40px;
+    width: 40px;
+    text-decoration: none;
+    transition: all 0.3s ease-in-out;
+}
+
+.all-order a:hover {
+    border: 1px solid #a0b8aa;
+}
+
+.all-order i {
+    color: #4a705a;
+    transition: all 0.3s ease-in-out;
+}
+
+.all-order a:hover i {
+    transform: scale(0.8);
+}
+
+
+.backlink {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    margin: 0 50px 50px 0;
+}
+
+.backlink a {
+    border: 1px solid #4a705a;
+    border-radius: 50%;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 5px;
+    height: 40px;
+    width: 40px;
+    text-decoration: none;
+    transition: all 0.3s ease-in-out;
+}
+
+.backlink a:hover {
+    border: 1px solid #a0b8aa;
+}
+
+.backlink i {
+    color: #4a705a;
+    transition: all 0.3s ease-in-out;
+}
+
+.backlink a:hover i {
+    transform: scale(0.8);
+}

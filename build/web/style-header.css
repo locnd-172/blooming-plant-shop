@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+header, nav {
+    height: 60px;
+    background-color: #284B37;
+}
+
+header nav {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    position: fixed;
+    z-index: 1;
+}
+
+header nav ul {
+    width: 80%;
+    padding: 0 50px;
+}
+
+header li {
+    width: fit-content;
+    height: 100%;
+    float: left;
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.menu-item a {
+    color: #cad3c6;
+    font-size: 1.1rem;
+    text-decoration: none;
+    margin: 0 30px;
+}
+
+header li:last-child {
+    width: 30%;
+    float: right;
+}
+
+header .menu-icon {
+    width: 20px;
+    float: right;
+    margin: 0 10px;
+    right: 1em;
+}
+
+
+/*.menu-item, .menu-item a {
+    transition: all 0.2s ease-in-out;
+}*/
+
+.menu-item:hover a {
+    color: #f1f5f1;
+}
+
+#logo {
+    width: 40px;
+    height: 40px;
+}
+
+.form-search {
+    font-size: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.form-search input, .form-search select {
+    height: 30px;
+    padding: 0 10px;
+    border: none;
+    outline: none;
+}
+
+.form-search input:last-child {
+    font-size: 0.9rem;
+    color: #ebebeb;
+    font-weight: normal;
+    background-color: #4a755d;
+    cursor: pointer;
+}
+
+.form-search input:last-child:hover {
+    background-color: #3c614c;
+}
+
+.form-search select {
+    border-left: 1px solid #c7c7c7;
+}
+
+.nav-icon {
+    display: flex;
+    align-items: center;
+}
+
+.nav-icon i {
+    font-size: 25px;
+}
+
+.cart-icon {
+    position: relative;
+}
+
+.no-item {
+    position: absolute;
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    color: #004d21;
+    background-color: #fafafa;
+    font-size: 10px;
+    font-weight: bolder;
+    text-align: center;
+    right: -7px;
+    top: 2px;
+}

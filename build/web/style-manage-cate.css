@@ -1,0 +1,242 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #f8f8f8;
+    background-repeat: no-repeat;
+}
+
+/*----------------*/
+.search-cate-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 40px 0;
+}
+/*-----------------*/
+
+.catelist-section {
+    width: 60%;
+    margin: 0 auto;
+    height: fit-content;
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+}
+
+.wrap-table100 {
+    width: 60%;
+    border-radius: 3px;
+    margin: 0 auto 100px;
+    /*height: 100vh;*/
+}
+
+.table-cate {
+    width: 100%;
+    display: table;
+    margin: 0;
+}
+
+.header, .row {
+    display: flex;
+    background-color: #fff;
+}
+
+.header {
+    background: #284B37;
+}
+
+
+.row .cell {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.row .cell {
+    font-size: 15px;
+    color: #666666;
+    line-height: 1.2;
+    padding: 10px 0;
+    border-bottom: 1px solid #f2f2f2;
+}
+
+.header .cell {
+    font-size: 18px;
+    color: #e7eee5;
+    padding: 25px 0;
+}
+
+.row .cell:nth-child(1) {
+    width: 30%;
+}
+
+.row .cell:nth-child(2) {
+    width: 40%;
+}
+
+.row .cell:nth-child(3) {
+    width: 30%;
+}
+
+.table, .row, .header {
+    width: 100% !important;
+}
+
+.row:not(.header):hover {
+    background-color: #f6faf9;
+}
+
+.row .cell a, .row .cell input[type="submit"] {
+    text-decoration: none;
+    display: inline-block;
+    cursor: pointer;
+    width: 120px;
+    height: 30px;
+    background-color: #d4e7de;
+    border-radius: 3px;
+    color: #284B37;
+    font-size: 14px;
+    font-weight: 400;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 10px;  
+}
+
+.row .cell input {
+    width: 90%;
+    height: 100%;
+    outline: none;
+    border: none;
+    background: transparent;
+    padding: 0 5px;
+    font-size: 15px;
+}
+
+.row .cell input:not([type="submit"]):focus {
+    background: #e7f5ee;
+}
+/*-------------------*/
+
+.add-cate {
+    width: 40%;
+    display: flex;
+    justify-content: center;
+
+}
+
+.add-cate form {
+    height: 200px;
+    width: 80%;
+    background-color: #284B37;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.noBullet {
+    list-style-type: none;
+    width: 80%;
+}
+
+.input-field {
+    font-size: 16px;
+    padding: 10px;
+    width: 100%;
+    border: none;
+    border-bottom: 1px solid #99ada2;
+    background-color: rgba(20, 20, 20, .2);
+    color: #f6f7f6;
+    outline: none;
+}
+
+.input-field::placeholder {
+    color: #7b8577;
+}
+
+.noBullet input[type="submit"] {
+    cursor: pointer;
+    margin-top: 20px;   
+    font-size: 16px;
+    padding: 10px;
+    width: 100%;
+    border: none;
+    background-color: #1b3526;
+    color: #e7eee5;
+    outline: none;
+}
+
+.noBullet input[type="submit"]:hover {
+    background-color: #1e3a29;
+}
+
+/*------------------*/
+
+.test-form {
+    position: relative;
+    width: 50%;
+    background: #284B37;
+    border-radius: 3px;
+    border: none;
+}
+
+.test-form input, .test-form button {
+    height: 80px;
+    border: none;
+    color: #284B37;
+    font-size: 16px;
+}
+
+.test-form input::placeholder {
+    color: #547763;
+}
+
+.test-form input[type="search"] {
+    outline: 0;
+    width: 100%;
+    background: #eef3f1;
+    padding: 0 20px;
+    border-radius: 3px;
+    appearance: none;
+    transition: all 0.3s cubic-bezier(0, 0, 0.43, 1.49);
+    transition-property: width, border-radius;
+    position: relative;
+}
+
+.test-form button {
+    display: none;
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 10%;
+    font-weight: bold;
+    font-size: 18px;
+    color: #e7eee5;
+    background: #284B37;
+    border-radius: 0 3px 3px 0;
+    cursor: pointer;
+}
+
+.test-form button:hover {
+    background-color: #335e45;
+}
+
+.test-form input[type="search"]:not(:placeholder-shown) {
+    border-radius: 3px 0 0 3px;
+    width: calc(100% - 80px );
+}
+
+.test-form input[type="search"]:not(:placeholder-shown) + button {
+    display: block;
+}

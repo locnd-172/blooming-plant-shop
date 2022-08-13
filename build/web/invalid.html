@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <title>Plant Shop</title>
+        <link rel="stylesheet" href="mycss.css" type="text/css"/>
+        <link rel="stylesheet" href="style-header.css" type="text/css" />
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
+        <link rel="shortcut icon" href="images/logo.png" type="image/x-icon">
+    </head>
+    <body>
+        <header>
+            <nav>
+                <ul>
+                    <li><a href=""><img src="images/logo.jpg"></a> </li>
+                    <li><a href="index.jsp">Home</a></li>
+                    <li><a href="registration.jsp">Register</a></li>
+                    <li><a href="login.jsp" >Login</a></li>
+                    <li>
+                        <form action="searchServlet" method="post">
+                            <input type="text" name="txtsearch">
+                            <select name="searchby">
+                                <option value="byname">by name</option>
+                                <option value="bycate">by category</option>
+                            </select>
+                            <input type="submit" name="action" value="search">
+                        </form>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+        <section>
+            <p>Invalid email or password</p>
+            <p><a href="login.jsp">Please login again</a></p>
+        </section>
+        <footer>
+            <p></p>
+        </footer>
+
+    </body>
+</html>
